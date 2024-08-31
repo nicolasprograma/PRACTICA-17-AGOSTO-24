@@ -21,7 +21,7 @@
     secciones y preguntas. Botones de acción o enlaces que llevan a otras
     páginas o enlaces. Campos de respuesta.
   </p>
-  <form action="index.html" method="get">
+  <form action="index.html" method="get" enctype="multipart/form-data">
     <div>
     <label for="">nombre</label>
     <input
@@ -30,6 +30,7 @@
       placeholder="ingrese su nombre"
       required
       id="nombre"
+      autocomplete="on"
       />
      </div>
     <form action="index.html" method="get">
@@ -57,6 +58,22 @@
         <label for="mujer">mujer</label>
         <input type="radio" name="genero" id="mujer">
       </div>
+      <div>
+        <label for="ciudades">ciudades</label>
+        <select name="ciudad" id="ciudad">
+          <option value="bucaramanga">bucaramanga</option>
+          <option value="cartagena">cartagena</option>
+          <option value="cali">cali</option>
+        </select>
+      </div>
+<br>
+<br>
+<input type="date">
+<br>
+      <div>
+        <input type="file">
+      </div>
+      <textarea name="mensaje" id="mensaje"></textarea>
     <button>enviar</button>
   </form>
 </html>
